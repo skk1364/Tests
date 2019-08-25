@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="25dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_account_verify"
+        android:tint="@color/colorAccent" />
+
+    <com.noori.tests.view.component.TextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/enter_confirmation_code"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/txt_title" />
+
+    <com.noori.tests.view.component.TextViewNormal
+        android:id="@+id/enter_confirmation_code_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/secondaryText"
+        android:textSize="@dimen/txt_primary" />
+
+    <com.noori.tests.view.component.EditTextNormal
+        android:id="@+id/confirm_code_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_background"
+        android:gravity="center"
+        android:hint="@string/confirm_code"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/primaryText"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="@dimen/txt_primary" />
+
+    <com.noori.tests.view.component.ButtonNormal
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/submit"
+        android:textColor="@color/btnText"
+        android:textSize="@dimen/txt_primary"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <com.noori.tests.view.component.TextViewNormal
+            android:id="@+id/confirm_code_timer_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/secondaryText"
+            android:textSize="@dimen/txt_mini" />
+
+        <com.noori.tests.view.component.TextViewNormal
+            android:id="@+id/do_not_have_confirm_code_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:paddingTop="3dp"
+            android:text="@string/do_not_recieve_confirm_code"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/txt_primary"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
